@@ -53,27 +53,6 @@ predicted = text_clf.predict(X_test)
 print("accuracy for NB : ")
 print(np.mean(predicted == Y_test))
 
-# ---------- charts --------
-
-def print_stats(category):
-    acc = [0] * len(language_data.target_names)
-    for p,y in zip(predicted, Y_test):
-        if y == category:
-            acc[p] += 1
-    print("stats for category : ")
-    print(acc)
-    acc[category] = 0
-    print(acc)
-
-print_stats(6)
-
-
-
-
-
-
-
-
 # ----------     SVM  -------------
 # http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html
 
@@ -88,3 +67,45 @@ _ = text_clf_svm.fit(X_train, Y_train)
 predicted_svm = text_clf_svm.predict(X_test)
 print("Support Vector Machines (SVM): ")
 print(np.mean(predicted_svm == Y_test))
+
+
+
+# ---------- charts --------
+
+import matplotlib.pyplot as plt
+
+def calculate_category_stats(category):
+    acc = [0] * len(language_data.target_names)
+    for p,y in zip(predicted, Y_test):
+        if y == category:
+            acc[p] += 1
+    return acc
+
+pprint(list(language_data.target_names))
+cat_number = len(language_data.target_names)
+for category in range(0,cat_number):
+    stats = calculate_category_stats(category)
+#    print("stats for category : " + language_data.target_names[category])
+#    pprint(stats)
+    
+    fig, ax = plt.subplots()
+
+    index = np.arange(cat_number)
+    bar_width = 0.35
+    
+    opacity = 0.4
+    error_config = {'ecolor': '0.3'}
+    
+    rects1 = ax.bar(index, stats, bar_width,
+                    alpha=opacity, color='b',
+                    label=language_data.target_names[category])
+    
+    ax.set_xlabel('Language')
+    ax.set_ylabel('Number of identification')
+    ax.set_title(language_data.target_names[category] )
+    ax.set_xticks(index + bar_width / 2)
+    ax.set_xticklabels((language_data.target_names))
+    
+    fig.tight_layout()
+    plt.show()
+
