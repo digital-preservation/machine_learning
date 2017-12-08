@@ -1,0 +1,91 @@
+{
+    "default": "generic",
+	"modes": [
+		{
+			"modeId": "generic",
+			"displayname": "Generic",
+			"cliptype": "type_generic",
+			"sections": [
+				{
+					"modelID": "model_volume"
+				}
+			]
+		},
+		{
+			"modeId": "dialog",
+			"displayname": "Dialogue",
+			"cliptype": "type_dialog",
+			"sections": [
+				{
+					"modelID": "model_loudness"
+				},
+				{
+					"modelID": "model_restoration"
+				},
+				{
+					"modelID": "model_clarity"
+				},
+				{
+					"modelID": "model_soundeffects"
+				},
+				{
+					"modelID": "model_volume"
+				}
+			]
+		},
+		{
+			"modeId": "music",
+			"displayname": "Music",
+			"cliptype": "type_music",
+			"sections": [
+				{
+					"modelID": "model_loudness"
+				},
+				{
+					"modelID": "model_duration"
+				},
+				{
+					"modelID": "model_volume"
+				}
+			]
+		},
+		{
+			"modeId": "sfx",
+			"displayname": "SFX",
+			"cliptype": "type_sfx",
+			"sections": [
+				{
+					"modelID": "model_loudness"
+				},
+				{
+					"modelID": "model_soundeffects"
+				},
+				{
+					"modelID": "model_pan"
+				},
+				{
+					"modelID": "model_volume"
+				}
+			]
+		},
+		{
+			"modeId": "ambience",
+			"displayname": "Ambience",
+			"cliptype": "type_ambience",
+			"sections": [
+				{
+					"modelID": "model_loudness"
+				},
+				{
+					"modelID": "model_soundeffects"
+				},
+				{
+					"modelID": "model_stereowidth"
+				},
+				{
+					"modelID": "model_volume"
+				}
+			]
+		}
+	]
+}

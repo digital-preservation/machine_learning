@@ -1,0 +1,306 @@
+{
+  "runtimes": {
+    "base": {
+      "Microsoft.Win32.Primitives": {
+        "Microsoft.Win32.Primitives": "4.0.0"
+      },
+      "System.ComponentModel.EventBasedAsync": {
+        "System.ComponentModel.EventBasedAsync": "4.0.10"
+      },
+      "System.Console": {
+        "System.Console": "4.0.0-beta-23123"
+      },
+      "System.Data.Common": {
+        "System.Data.Common": "4.0.0"
+      },
+      "System.Data.SqlClient": {
+        "System.Data.SqlClient": "4.0.0-beta-23123"
+      },
+      "System.Diagnostics.Contracts": {
+        "System.Diagnostics.Contracts": "4.0.0"
+      },
+      "System.Diagnostics.FileVersionInfo": {
+        "System.Diagnostics.FileVersionInfo": "4.0.0-beta-23123"
+      },
+      "System.Diagnostics.Process": {
+        "System.Diagnostics.Process": "4.0.0-beta-23123"
+      },
+      "System.Diagnostics.StackTrace": {
+        "System.Diagnostics.StackTrace": "4.0.0"
+      },
+      "System.IO.FileSystem.DriveInfo": {
+        "System.IO.FileSystem.DriveInfo": "4.0.0-beta-23123"
+      },
+      "System.IO.FileSystem.Watcher": {
+        "System.IO.FileSystem.Watcher": "4.0.0-beta-23123"
+      },
+      "System.IO.MemoryMappedFiles": {
+        "System.IO.MemoryMappedFiles": "4.0.0-beta-23123"
+      },
+      "System.IO.Pipes": {
+        "System.IO.Pipes": "4.0.0-beta-23123"
+      },
+      "System.Net.NetworkInformation": {
+        "System.Net.NetworkInformation": "4.0.10-beta-23123"
+      },
+      "System.Net.NameResolution": {
+        "System.Net.NameResolution": "4.0.0-beta-23123"
+      },
+      "System.Net.Requests": {
+        "System.Net.Requests": "4.0.10"
+      },
+      "System.Net.Security": {
+        "System.Net.Security": "4.0.0-beta-23123"
+      },
+      "System.Net.Sockets": {
+        "System.Net.Sockets": "4.0.10-beta-23123"
+      },
+      "System.Net.Utilities": {
+        "System.Net.Utilities": "4.0.0-beta-23123"
+      },
+      "System.Net.WebHeaderCollection": {
+        "System.Net.WebHeaderCollection": "4.0.0"
+      },
+      "System.Net.WebSockets": {
+        "System.Net.WebSockets": "4.0.0-beta-23123"
+      },
+      "System.Net.WebSockets.Client": {
+        "System.Net.WebSockets.Client": "4.0.0-beta-23123"
+      },
+      "System.Reflection.Emit": {
+        "System.Reflection.Emit": "4.0.0"
+      },
+      "System.Reflection.Emit.ILGeneration": {
+        "System.Reflection.Emit.ILGeneration": "4.0.0"
+      },
+      "System.Reflection.Emit.Lightweight": {
+        "System.Reflection.Emit.Lightweight": "4.0.0"
+      },
+      "System.Resources.ReaderWriter": {
+        "System.Resources.ReaderWriter": "4.0.0-beta-23123"
+      },
+      "System.Runtime.CompilerServices.VisualC": {
+        "System.Runtime.CompilerServices.VisualC": "4.0.0-beta-23123"
+      },
+      "System.Runtime.Loader": {
+        "System.Runtime.Loader": "4.0.0-beta-23123"
+      },
+      "System.Runtime.Serialization.Json": {
+        "System.Runtime.Serialization.Json": "4.0.0"
+      },
+      "System.Runtime.Serialization.Primitives": {
+        "System.Runtime.Serialization.Primitives": "4.0.10"
+      },
+      "System.Runtime.Serialization.Xml": {
+        "System.Runtime.Serialization.Xml": "4.0.10"
+      },
+      "System.Security.Cryptography.DeriveBytes": {
+        "System.Security.Cryptography.DeriveBytes": "4.0.0-beta-23123"
+      },
+      "System.Security.Cryptography.Encoding": {
+        "System.Security.Cryptography.Encoding": "4.0.0-beta-23123"
+      },
+      "System.Security.Cryptography.Encryption": {
+        "System.Security.Cryptography.Encryption": "4.0.0-beta-23123"
+      },
+      "System.Security.Cryptography.Encryption.Aes": {
+        "System.Security.Cryptography.Encryption.Aes": "4.0.0-beta-23123"
+      },
+      "System.Security.Cryptography.Hashing": {
+        "System.Security.Cryptography.Hashing": "4.0.0-beta-23123"
+      },
+      "System.Security.Cryptography.Hashing.Algorithms": {
+        "System.Security.Cryptography.Hashing.Algorithms": "4.0.0-beta-23123"
+      },
+      "System.Security.Cryptography.RandomNumberGenerator": {
+        "System.Security.Cryptography.RandomNumberGenerator": "4.0.0-beta-23123"
+      },
+      "System.Security.Cryptography.RSA": {
+        "System.Security.Cryptography.RSA": "4.0.0-beta-23123"
+      },
+      "System.Security.Cryptography.X509Certificates": {
+        "System.Security.Cryptography.X509Certificates": "4.0.0-beta-23123"
+      },
+      "System.Security.SecureString": {
+        "System.Security.SecureString": "4.0.0-beta-23123"
+      },
+      "System.ServiceModel.Duplex": {
+        "System.ServiceModel.Duplex": "4.0.0"
+      },
+      "System.ServiceModel.Http": {
+        "System.ServiceModel.Http": "4.0.10"
+      },
+      "System.ServiceModel.NetTcp": {
+        "System.ServiceModel.NetTcp": "4.0.0"
+      },
+      "System.ServiceModel.Primitives": {
+        "System.ServiceModel.Primitives": "4.0.0"
+      },
+      "System.ServiceModel.Security": {
+        "System.ServiceModel.Security": "4.0.0"
+      },
+      "System.Xml.XmlSerializer": {
+        "System.Xml.XmlSerializer": "4.0.10"
+      },
+      "Microsoft.CSharp": {
+        "Microsoft.CSharp": "4.0.0"
+      },
+      "Microsoft.VisualBasic": {
+        "Microsoft.VisualBasic": "10.0.0"
+      },
+      "System.AppContext": {
+        "System.AppContext": "4.0.0"
+      },
+      "System.Collections": {
+        "System.Collections": "4.0.10"
+      },
+      "System.Collections.Concurrent": {
+        "System.Collections.Concurrent": "4.0.10"
+      },
+      "System.Collections.Immutable": {
+        "System.Collections.Immutable": "1.1.37"
+      },
+      "System.ComponentModel": {
+        "System.ComponentModel": "4.0.0"
+      },
+      "System.ComponentModel.Annotations": {
+        "System.ComponentModel.Annotations": "4.0.10"
+      },
+      "System.Diagnostics.Debug": {
+        "System.Diagnostics.Debug": "4.0.10"
+      },
+      "System.Diagnostics.Tools": {
+        "System.Diagnostics.Tools": "4.0.0"
+      },
+      "System.Diagnostics.Tracing": {
+        "System.Diagnostics.Tracing": "4.0.20"
+      },
+      "System.Dynamic.Runtime": {
+        "System.Dynamic.Runtime": "4.0.10"
+      },
+      "System.Globalization": {
+        "System.Globalization": "4.0.10"
+      },
+      "System.Globalization.Calendars": {
+        "System.Globalization.Calendars": "4.0.0"
+      },
+      "System.Globalization.Extensions": {
+        "System.Globalization.Extensions": "4.0.0"
+      },
+      "System.IO": {
+        "System.IO": "4.0.10"
+      },
+      "System.IO.Compression": {
+        "System.IO.Compression": "4.0.0"
+      },
+      "System.IO.Compression.ZipFile": {
+        "System.IO.Compression.ZipFile": "4.0.0"
+      },
+      "System.IO.FileSystem": {
+        "System.IO.FileSystem": "4.0.0"
+      },
+      "System.IO.FileSystem.Primitives": {
+        "System.IO.FileSystem.Primitives": "4.0.0"
+      },
+      "System.IO.UnmanagedMemoryStream": {
+        "System.IO.UnmanagedMemoryStream": "4.0.0"
+      },
+      "System.Linq": {
+        "System.Linq": "4.0.0"
+      },
+      "System.Linq.Expressions": {
+        "System.Linq.Expressions": "4.0.10"
+      },
+      "System.Linq.Parallel": {
+        "System.Linq.Parallel": "4.0.0"
+      },
+      "System.Linq.Queryable": {
+        "System.Linq.Queryable": "4.0.0"
+      },
+      "System.Net.Http": {
+        "System.Net.Http": "4.0.0"
+      },
+      "System.Net.Primitives": {
+        "System.Net.Primitives": "4.0.10"
+      },
+      "System.Numerics.Vectors": {
+        "System.Numerics.Vectors": "4.1.0"
+      },
+      "System.ObjectModel": {
+        "System.ObjectModel": "4.0.10"
+      },
+      "System.Reflection": {
+        "System.Reflection": "4.0.10"
+      },
+      "System.Reflection.DispatchProxy": {
+        "System.Reflection.DispatchProxy": "4.0.0"
+      },
+      "System.Reflection.Extensions": {
+        "System.Reflection.Extensions": "4.0.0"
+      },
+      "System.Reflection.Metadata": {
+        "System.Reflection.Metadata": "1.0.22"
+      },
+      "System.Reflection.Primitives": {
+        "System.Reflection.Primitives": "4.0.0"
+      },
+      "System.Reflection.TypeExtensions": {
+        "System.Reflection.TypeExtensions": "4.0.0"
+      },
+      "System.Resources.ResourceManager": {
+        "System.Resources.ResourceManager": "4.0.0"
+      },
+      "System.Runtime": {
+        "System.Runtime": "4.0.20"
+      },
+      "System.Runtime.Extensions": {
+        "System.Runtime.Extensions": "4.0.10"
+      },
+      "System.Runtime.Handles": {
+        "System.Runtime.Handles": "4.0.0"
+      },
+      "System.Runtime.InteropServices": {
+        "System.Runtime.InteropServices": "4.0.20"
+      },
+      "System.Runtime.Numerics": {
+        "System.Runtime.Numerics": "4.0.0"
+      },
+      "System.Security.Claims": {
+        "System.Security.Claims": "4.0.0"
+      },
+      "System.Security.Principal": {
+        "System.Security.Principal": "4.0.0"
+      },
+      "System.Text.Encoding": {
+        "System.Text.Encoding": "4.0.10"
+      },
+      "System.Text.Encoding.Extensions": {
+        "System.Text.Encoding.Extensions": "4.0.10"
+      },
+      "System.Text.RegularExpressions": {
+        "System.Text.RegularExpressions": "4.0.10"
+      },
+      "System.Threading": {
+        "System.Threading": "4.0.10"
+      },
+      "System.Threading.Tasks": {
+        "System.Threading.Tasks": "4.0.10"
+      },
+      "System.Threading.Tasks.Dataflow": {
+        "System.Threading.Tasks.Dataflow": "4.5.25"
+      },
+      "System.Threading.Tasks.Parallel": {
+        "System.Threading.Tasks.Parallel": "4.0.0"
+      },
+      "System.Threading.Timer": {
+        "System.Threading.Timer": "4.0.0"
+      },
+      "System.Xml.ReaderWriter": {
+        "System.Xml.ReaderWriter": "4.0.10"
+      },
+      "System.Xml.XDocument": {
+        "System.Xml.XDocument": "4.0.10"
+      }
+    }
+  }
+}

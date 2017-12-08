@@ -1,0 +1,36 @@
+{
+  "runtimes": {
+    "win7-x86": {
+      "Microsoft.NETCore.Runtime": {
+        "Microsoft.NETCore.Runtime.CoreCLR-x86": "1.0.0",
+        "Microsoft.NETCore.Windows.ApiSets-x86": "1.0.0"
+      }
+    },
+    "win7-x86-aot": {
+      "Microsoft.NETCore.Runtime": {
+        "Microsoft.NETCore.Runtime.Native": "1.0.0"
+      }
+    },
+    "win7-x64": {
+      "Microsoft.NETCore.Runtime": {
+        "Microsoft.NETCore.Runtime.CoreCLR-x64": "1.0.0",
+        "Microsoft.NETCore.Windows.ApiSets-x64": "1.0.0"
+      }
+    },
+    "win7-x64-aot": {
+      "Microsoft.NETCore.Runtime": {
+        "Microsoft.NETCore.Runtime.Native": "1.0.0"
+      }
+    },
+    "win10-arm": {
+      "Microsoft.NETCore.Runtime": {
+        "Microsoft.NETCore.Runtime.CoreCLR-arm": "1.0.0"
+      }
+    },
+    "win10-arm-aot": {
+      "Microsoft.NETCore.Runtime": {
+        "Microsoft.NETCore.Runtime.Native": "1.0.0"
+      }
+    }
+  }
+}

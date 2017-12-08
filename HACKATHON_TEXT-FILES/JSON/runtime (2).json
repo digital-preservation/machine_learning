@@ -1,0 +1,13 @@
+{
+  "runtimes": {
+    "aot": {
+      "System.Reflection.DispatchProxy": {}
+    },
+    "any": {
+      "System.Reflection.DispatchProxy": {
+        "System.Reflection.Emit": "4.0.0",
+        "System.Reflection.Emit.ILGeneration": "4.0.0"
+      }
+    }
+  }
+}

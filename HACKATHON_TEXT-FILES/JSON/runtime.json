@@ -1,0 +1,10 @@
+{
+  "runtimes": {
+    "any": {
+      "System.Xml.XmlSerializer": {
+        "System.Reflection.Emit": "4.0.0",
+        "System.Reflection.Emit.ILGeneration": "4.0.0"
+      }
+    }
+  }
+}
