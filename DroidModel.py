@@ -83,18 +83,15 @@ def calculate_category_stats(category):
 
 pprint(list(language_data.target_names))
 cat_number = len(language_data.target_names)
-for category in range(0,cat_number):
-    stats = calculate_category_stats(category)
-#    print("stats for category : " + language_data.target_names[category])
-#    pprint(stats)
-    
+
+
+def show_chart(stats, cat): 
     fig, ax = plt.subplots()
 
     index = np.arange(cat_number)
     bar_width = 0.35
     
     opacity = 0.4
-    error_config = {'ecolor': '0.3'}
     
     rects1 = ax.bar(index, stats, bar_width,
                     alpha=opacity, color='b',
@@ -108,4 +105,17 @@ for category in range(0,cat_number):
     
     fig.tight_layout()
     plt.show()
+
+
+
+for category in range(0,cat_number):
+    stats = calculate_category_stats(category)
+    show_chart(stats, category)
+#    print("stats for category : " + language_data.target_names[category])
+#    pprint(stats)
+
+acc = [0] * len(language_data.target_names)
+for p in Y_test:
+    acc[p] += 1
+show_chart(acc, category)
 
