@@ -15,31 +15,69 @@ from sklearn.linear_model import SGDClassifier
 import numpy as np
 import random
 import sys
+import keras
+from keras.datasets import reuters
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Activation
+from keras.preprocessing.text import Tokenizer
 
 from keras.models import Sequential
 from keras.layers import Dense
 
-language_data = load_files(container_path='/home/rhubner/scikit_learn_data/HACKATHON_TEXT-FILES', 
+max_words = 10000
+batch_size = 32
+epochs = 5
+
+print('Loading data...')
+language_data = load_files(container_path='./HACKATHON_TEXT-FILES', 
                           load_content=True,
                           encoding='UTF-8',
                           shuffle=True)
 
-X_train, X_test, Y_train, Y_test = train_test_split(language_data.data, language_data.target, 
+x_train, x_test, y_train, y_test = train_test_split(language_data.data, language_data.target, 
                                                     test_size=0.33, random_state=random.randint(1,4294967295))
 
 
-model = Sequential()
 
-model.add(Dense(units=64, activation='relu', input_dim=100))
-model.add(Dense(units=10, activation='softmax'))
+print(len(x_train), 'train sequences')
+print(len(x_test), 'test sequences')
+print(" ")
+
+num_classes = np.max(y_train) + 1
+print(num_classes, 'classes')
+
+print('Vectorizing sequence data...')
+tokenizer = Tokenizer(num_words=max_words)
+x_train = tokenizer.sequences_to_matrix(x_train, mode='binary')
+x_test = tokenizer.sequences_to_matrix(x_test, mode='binary')
+print('x_train shape:', x_train.shape)
+print('x_test shape:', x_test.shape)
+
+print('Convert class vector to binary class matrix '
+      '(for use with categorical_crossentropy)')
+y_train = keras.utils.to_categorical(y_train, num_classes)
+y_test = keras.utils.to_categorical(y_test, num_classes)
+print('y_train shape:', y_train.shape)
+print('y_test shape:', y_test.shape)
+
+print('Building model...')
+model = Sequential()
+model.add(Dense(512, input_shape=(max_words,)))
+model.add(Activation('relu'))
+model.add(Dropout(0.5))
+model.add(Dense(num_classes))
+model.add(Activation('softmax'))
+
 model.compile(loss='categorical_crossentropy',
-              optimizer='sgd',
+              optimizer='adam',
               metrics=['accuracy'])
 
-
-model.fit(X_train, Y_train, epochs=5, batch_size=32)
-
-
-loss_and_metrics = model.evaluate(X_test, Y_test, batch_size=128)
-print("neural network stats")
-print(loss_and_metrics)
+history = model.fit(x_train, y_train,
+                    batch_size=batch_size,
+                    epochs=epochs,
+                    verbose=1,
+                    validation_split=0.1)
+score = model.evaluate(x_test, y_test,
+                       batch_size=batch_size, verbose=1)
+print('Test score:', score[0])
+print('Test accuracy:', score[1])

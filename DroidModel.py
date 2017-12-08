@@ -17,7 +17,7 @@ import random
 import sys
 
 
-language_data = load_files(container_path='/home/rhubner/scikit_learn_data/HACKATHON_TEXT-FILES', 
+language_data = load_files(container_path='./HACKATHON_TEXT-FILES', 
                           load_content=True,
                           encoding='UTF-8',
                           shuffle=True)
@@ -28,6 +28,9 @@ X_train, X_test, Y_train, Y_test = train_test_split(language_data.data, language
 from pprint import pprint
 
 sample = 10
+
+print(len(X_train), 'train sequences')
+print(len(X_test), 'test sequences')
 
 pprint(list(language_data.target_names))
 print(Y_train[sample])
@@ -49,6 +52,25 @@ text_clf = text_clf.fit(X_train, Y_train)
 predicted = text_clf.predict(X_test)
 print("accuracy for NB : ")
 print(np.mean(predicted == Y_test))
+
+# ---------- charts --------
+
+def print_stats(category):
+    acc = [0] * len(language_data.target_names)
+    for p,y in zip(predicted, Y_test):
+        if y == category:
+            acc[p] += 1
+    print("stats for category : ")
+    print(acc)
+    acc[category] = 0
+    print(acc)
+
+print_stats(6)
+
+
+
+
+
 
 
 
